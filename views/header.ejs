@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title%></title>
+    <link rel="stylesheet" href = '/stylesheets/bootstrap.css' />
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav nav-pills">
+    	<li><a href="/">Home</a></li>
+        <% if(!locals.user){ %>
+    	<li><a href="/">login</a></li>
+    	<li><a href="/reg">reg</a></li>
+        <% }else {%>
+        <li><a href="/">logout</a></li>
+        <% } %>
+    </ul>
+</nav>

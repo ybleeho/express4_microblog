@@ -1,0 +1,48 @@
+<% include header.ejs %>
+
+
+
+<div id="container" class="container">
+
+    <% if (success) { %>
+	<div class="alert alert-success">
+        <%= success %>
+	</div>
+    <% }%>
+    <%if (error){ %>
+	<div class="alert alert-error">
+        <%= error %>
+	</div>
+    <% } %>
+
+
+<div class="jumbotron">
+	<h1>welcome!</h1>
+	<p>Microblog is based on Node.js</p>
+	<p>
+		<a class="btn btn-primary" href="/login">login</a>
+		<a class="btn btn-large"  href="/reg">reg</a>
+	</p>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h2>Leeho</h2>
+			<p>Its a sunny day</p>
+		</div>
+			<div class="col-md-4">
+			<h2>Tiger lee</h2>
+		<p>I am so sorry but i love you</p>
+		</div>
+		<div class="col-md-4">
+			<h2>Park hwa</h2>
+			<p>I am missing you</p>
+		</div>
+	</div>
+</div>
+
+<hr>
+</div>
+<% include footer.ejs %>
