@@ -1,5 +1,5 @@
 module.exports = {
-    cookieSecret:'microblogbyvoid',
-    db:'microblog',
-    host:'localhost'
+    coolieSecret : 'microblog',
+	db:'microblog',
+	host:'localhost'
 };
